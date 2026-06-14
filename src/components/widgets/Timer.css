@@ -1,0 +1,41 @@
+.timer-widget {
+  background: rgba(20, 20, 30, 0.8);
+  border: 1px solid rgba(100, 213, 255, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+}
+
+.timer-display {
+  font-size: 24px;
+  font-weight: 600;
+  color: #64d5ff;
+  font-family: 'Courier New', monospace;
+  min-width: 80px;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.timer-controls button {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: rgba(100, 213, 255, 0.1);
+  border: 1px solid rgba(100, 213, 255, 0.3);
+  color: #64d5ff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.timer-controls button:hover {
+  background: rgba(100, 213, 255, 0.2);
+  border-color: rgba(100, 213, 255, 0.5);
+}
