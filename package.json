@@ -1,0 +1,28 @@
+{
+  "name": "miazo",
+  "version": "0.1.0",
+  "description": "Fast. Clean. Effortless. Desktop overlay for gaming, streaming, and work.",
+  "main": "src/main.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "electron .",
+    "dev": "concurrently \"npm run dev:vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "dev:vite": "vite",
+    "build": "vite build",
+    "build:app": "electron-builder"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zustand": "^4.4.0",
+    "globalhotkeys": "^0.3.2"
+  },
+  "devDependencies": {
+    "electron": "^latest",
+    "electron-builder": "^latest",
+    "vite": "^latest",
+    "@vitejs/plugin-react": "^latest",
+    "concurrently": "^latest",
+    "wait-on": "^latest"
+  }
+}
